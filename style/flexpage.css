@@ -1,0 +1,12 @@
+.flexpage_actionbar {
+    margin: 5px 10px;
+}
+
+.flexpage_prev_next #format_flexpage_next_page {
+    display: block;
+    float: right;
+}
+
+.format_flexpage_tabs {
+    margin-top: 5px;
+}
