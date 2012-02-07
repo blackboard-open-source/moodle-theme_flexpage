@@ -79,7 +79,7 @@ echo $OUTPUT->doctype() ?>
 
 <!-- Flexpage content -->
     <div id="flexpage_actionbar" class="flexpage_actionbar clearfix">
-        <?php echo core_renderer::MAIN_CONTENT_TOKEN ?>
+        <?php echo $OUTPUT->main_content() ?>
     </div>
 
 <!-- START CONTENT BODY -->
