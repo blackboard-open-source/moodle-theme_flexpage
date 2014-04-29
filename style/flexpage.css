@@ -32,3 +32,8 @@
 .format_flexpage_tabs {
     margin-top: 5px;
 }
+
+/* Makes the target larger for when you are dragging blocks into an empty top region */
+.format-flexpage #region-top .block-region {
+    min-height: 20px;
+}

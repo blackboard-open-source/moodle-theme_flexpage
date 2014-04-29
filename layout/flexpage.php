@@ -45,6 +45,22 @@ $haslogininfo = (empty($PAGE->layout_options['nologininfo']));
 $showsidepre = ($hassidepre && !$PAGE->blocks->region_completely_docked('side-pre', $OUTPUT));
 $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-post', $OUTPUT));
 
+// Always show block regions when editing so blocks can
+// be dragged into empty block regions.
+if ($PAGE->user_is_editing()) {
+    if ($PAGE->blocks->is_known_region('side-pre')) {
+        $showsidepre = true;
+        $hassidepre  = true;
+    }
+    if ($PAGE->blocks->is_known_region('side-post')) {
+        $showsidepost = true;
+        $hassidepost  = true;
+    }
+    if ($PAGE->blocks->is_known_region('side-top')) {
+        $hassidetop = true;
+    }
+}
+
 $custommenu = $OUTPUT->custom_menu();
 $hascustommenu = (empty($PAGE->layout_options['nocustommenu']) && !empty($custommenu));
 
@@ -127,20 +143,21 @@ echo $OUTPUT->doctype() ?>
 <!-- START CONTENT BODY -->
     <div id="page-content">
 
-        <?php if ($hassidetop or format_flexpage_has_next_or_previous()) { ?>
+        <?php if ($hassidetop) { ?>
         <div id="region-top" class="block-region">
             <div class="region-content">
                 <?php echo $OUTPUT->blocks('side-top') ?>
-                <div class="flexpage_prev_next">
-                <?php
-                    echo format_flexpage_previous_button();
-                    echo format_flexpage_next_button();
-                ?>
-                </div>
             </div>
         </div>
         <?php } ?>
-
+        <?php if (format_flexpage_has_next_or_previous()) { ?>
+        <div class="flexpage_prev_next">
+            <?php
+            echo format_flexpage_previous_button();
+            echo format_flexpage_next_button();
+            ?>
+        </div>
+        <?php } ?>
         <div id="region-main-box">
             <div id="region-post-box">
 
