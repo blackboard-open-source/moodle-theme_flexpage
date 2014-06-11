@@ -37,3 +37,29 @@
 .format-flexpage #region-top .block-region {
     min-height: 20px;
 }
+
+/* Dangerous: change overflow to visible so activity and block edit menus are visible to the user. */
+.format-flexpage.editing #page-content #region-top,
+.format-flexpage.editing #page-content #region-top .region-content,
+.format-flexpage.editing #page-content #region-pre,
+.format-flexpage.editing #page-content #region-pre .region-content,
+.format-flexpage.editing #page-content #region-post,
+.format-flexpage.editing #page-content #region-post .region-content {
+    overflow: visible;
+}
+
+/* Allow menu items to wrap as space can get limited. */
+#region-pre .block_flexpagemod_default ul.menu li,
+#region-post .block_flexpagemod_default ul.menu li {
+    white-space: normal;
+}
+
+/* Forces menus to always show under the element that opened it. */
+.format-flexpage.editing #region-top .block .title ul.menu[style],
+.format-flexpage.editing #region-top .block .content ul.menu[style],
+.format-flexpage.editing #region-pre .block:first-child .title ul.menu[style],
+.format-flexpage.editing #region-pre .block:first-child .content ul.menu[style],
+.format-flexpage.editing #region-post .block:first-child .title ul.menu[style],
+.format-flexpage.editing #region-post .block:first-child .content ul.menu[style] {
+    top: inherit !important;
+}
