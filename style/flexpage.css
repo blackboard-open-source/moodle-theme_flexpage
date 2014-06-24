@@ -34,17 +34,19 @@
 }
 
 /* Makes the target larger for when you are dragging blocks into an empty top region */
-.format-flexpage #region-top .block-region {
+.pagelayout-format_flexpage #region-top .block-region {
     min-height: 20px;
 }
 
 /* Dangerous: change overflow to visible so activity and block edit menus are visible to the user. */
-.format-flexpage.editing #page-content #region-top,
-.format-flexpage.editing #page-content #region-top .region-content,
-.format-flexpage.editing #page-content #region-pre,
-.format-flexpage.editing #page-content #region-pre .region-content,
-.format-flexpage.editing #page-content #region-post,
-.format-flexpage.editing #page-content #region-post .region-content {
+.pagelayout-format_flexpage.editing #page-content #region-top,
+.pagelayout-format_flexpage.editing #page-content #region-top .region-content,
+.pagelayout-format_flexpage.editing #page-content #region-main,
+.pagelayout-format_flexpage.editing #page-content #region-main .region-content,
+.pagelayout-format_flexpage.editing #page-content #region-pre,
+.pagelayout-format_flexpage.editing #page-content #region-pre .region-content,
+.pagelayout-format_flexpage.editing #page-content #region-post,
+.pagelayout-format_flexpage.editing #page-content #region-post .region-content {
     overflow: visible;
 }
 
@@ -55,11 +57,13 @@
 }
 
 /* Forces menus to always show under the element that opened it. */
-.format-flexpage.editing #region-top .block .title ul.menu[style],
-.format-flexpage.editing #region-top .block .content ul.menu[style],
-.format-flexpage.editing #region-pre .block:first-child .title ul.menu[style],
-.format-flexpage.editing #region-pre .block:first-child .content ul.menu[style],
-.format-flexpage.editing #region-post .block:first-child .title ul.menu[style],
-.format-flexpage.editing #region-post .block:first-child .content ul.menu[style] {
+.pagelayout-format_flexpage.editing #region-top .block .title ul.menu[style],
+.pagelayout-format_flexpage.editing #region-top .block .content ul.menu[style],
+.pagelayout-format_flexpage.editing #region-main .block:first-child .title ul.menu[style],
+.pagelayout-format_flexpage.editing #region-main .block:first-child .content ul.menu[style],
+.pagelayout-format_flexpage.editing #region-pre .block:first-child .title ul.menu[style],
+.pagelayout-format_flexpage.editing #region-pre .block:first-child .content ul.menu[style],
+.pagelayout-format_flexpage.editing #region-post .block:first-child .title ul.menu[style],
+.pagelayout-format_flexpage.editing #region-post .block:first-child .content ul.menu[style] {
     top: inherit !important;
 }
