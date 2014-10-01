@@ -34,8 +34,9 @@
 }
 
 /* Makes the target larger for when you are dragging blocks into an empty top region */
+.pagelayout-format_flexpage #region-top.block-region,
 .pagelayout-format_flexpage #region-top .block-region {
-    min-height: 20px;
+    min-height: 40px;
 }
 
 /* Dangerous: change overflow to visible so activity and block edit menus are visible to the user. */
