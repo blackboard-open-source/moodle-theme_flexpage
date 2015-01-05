@@ -22,7 +22,7 @@
  */
 
 $THEME->name = 'flexpage';
-$THEME->parents = array('standard', 'base');
+$THEME->parents = array('base');
 $THEME->enable_dock = false;
 $THEME->sheets = array(
     'flexpage',
