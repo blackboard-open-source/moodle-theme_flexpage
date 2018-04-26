@@ -21,9 +21,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Tema Flexpage';
-$string['region-side-post'] = 'Dret';
-$string['region-side-pre'] = 'Esquerre';
-$string['region-side-top'] = 'Capdamunt';
+$string['pluginname'] = 'Tema de Flexpage';
+$string['region-side-post'] = 'Derecha';
+$string['region-side-pre'] = 'Izquierda';
+$string['region-side-top'] = 'Arriba';
 $string['region-main'] = 'Principal';
-$string['choosereadme'] = 'Aquest tema proporciona la presentació del format de curs Flexpage.';
+$string['choosereadme'] = 'Este tema proporciona la presentación para el formato de curso Flexpage.';

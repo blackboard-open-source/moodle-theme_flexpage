@@ -21,9 +21,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Tema Flexpage';
-$string['region-side-post'] = 'Dret';
-$string['region-side-pre'] = 'Esquerre';
-$string['region-side-top'] = 'Capdamunt';
-$string['region-main'] = 'Principal';
-$string['choosereadme'] = 'Aquest tema proporciona la presentació del format de curs Flexpage.';
+$string['pluginname'] = 'Flexpage-teema';
+$string['region-side-post'] = 'Oikea';
+$string['region-side-pre'] = 'Vasen';
+$string['region-side-top'] = 'Yläosa';
+$string['region-main'] = 'Pääalue';
+$string['choosereadme'] = 'Tämä teema toimii Flexpage-kurssiformaatin alustana.';

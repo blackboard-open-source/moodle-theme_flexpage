@@ -21,9 +21,9 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$string['pluginname'] = 'Tema Flexpage';
-$string['region-side-post'] = 'Dret';
-$string['region-side-pre'] = 'Esquerre';
-$string['region-side-top'] = 'Capdamunt';
-$string['region-main'] = 'Principal';
-$string['choosereadme'] = 'Aquest tema proporciona la presentació del format de curs Flexpage.';
+$string['pluginname'] = 'Flexpage 主題';
+$string['region-side-post'] = '右側';
+$string['region-side-pre'] = '左側';
+$string['region-side-top'] = '頂端';
+$string['region-main'] = '主區域';
+$string['choosereadme'] = '此主題提供 Flexpage 課程格式的呈現方式。';
